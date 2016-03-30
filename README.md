@@ -26,8 +26,9 @@ to install the plugin to your local repository.  Next you'll want to add the plu
     </plugins>
   </build>
 </project>
-```
+
 ## Configuration Options
+
 ```outputDir - The directory to which the generated sources are written.  Default: ${project.build.directory}/generated-test-sources/tortilla
 sourceDir - The directory containing the Java Beans that should be evaluated for test case generation.  Default: ${project.build.directory}/classes
 baseClass - The full class name of the base class to extend for test cases.
@@ -39,7 +40,6 @@ equalsVerifierParams - parameters to pass to equals verifier when generating the
 equalsVerifierExcludes - A collection of class/package specs that should be evaluated for exclusion for equals verifier test case generation.
 equalsVerifierIncludes - A collection of class/package specs that should be evaluated for inclusion for equals verifier test case generation.
 allowNoNullary - true to allow testing of classes without nullary constructors.  default: false
-```
 
 Class/package specifications can be explicit class names, such as java.lang.Object, or can contain wildcards, such as java.lang.*.  Wildcards are evaluated according to the rules from Apache Commons IO [FilenameUtils](https://commons.apache.org/proper/commons-io/javadocs/api-1.4/org/apache/commons/io/FilenameUtils.html#wildcardMatch%28java.lang.String,%20java.lang.String%29).
 
