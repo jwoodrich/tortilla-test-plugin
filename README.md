@@ -28,7 +28,7 @@ to install the plugin to your local repository.  Next you'll want to add the plu
 </project>
 ```
 ## Configuration Options
-``` outputDir - The directory to which the generated sources are written.  Default: ${project.build.directory}/generated-test-sources/tortilla
+```outputDir - The directory to which the generated sources are written.  Default: ${project.build.directory}/generated-test-sources/tortilla
 sourceDir - The directory containing the Java Beans that should be evaluated for test case generation.  Default: ${project.build.directory}/classes
 baseClass - The full class name of the base class to extend for test cases.
 includes - A collection of class/package specs that should be evaluated for inclusion in test case generation.
